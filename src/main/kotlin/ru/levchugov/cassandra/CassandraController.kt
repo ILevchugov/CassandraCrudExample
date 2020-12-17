@@ -24,6 +24,7 @@ class CassandraController {
 
     @DeleteMapping(value = ["movies/{id}"])
     fun remove(@PathVariable(name = "id") id: Int): ResponseEntity<Any> {
+        //some comment
         cassandraMovieRepository?.deleteById(id)
         return ResponseEntity(HttpStatus.OK)
     }
