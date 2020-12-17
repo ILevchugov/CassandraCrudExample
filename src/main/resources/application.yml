@@ -1,0 +1,10 @@
+spring:
+  data:
+    cassandra:
+      contact-points: localhost
+      port: 9042
+      schema-action: none
+      keyspace-name: test
+      local-datacenter: datacenter1
+server:
+  port: 8000
